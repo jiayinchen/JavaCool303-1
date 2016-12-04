@@ -2,6 +2,7 @@
 package JavaCool303;
 
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,20 +22,23 @@ public class Cool303Button extends JButton implements ActionListener {
 	}
 	
 	/**
-	 * Constructs new named Cool303Button
-	 * @param text
+	 * Constructs new Cool303Button with text
+	 * @param text text on Cool303Button
 	 */
 	public Cool303Button(String text){
 		super(text);
 		label = text;
+		
 	}
-	
-	/**
-	 * Prints name of Cool303Button when pressed
-	 */
-	public void actionPerformed(ActionEvent e){
-		System.out.println(label);
-	}
-	
 
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		System.out.println(label);
+	}	
+
+	@Override
+	public void paintComponent(Graphics g){
+		super.paintComponent(getGraphics());
+		setBackground(new Color(247, 147, 225));
+	}
 }

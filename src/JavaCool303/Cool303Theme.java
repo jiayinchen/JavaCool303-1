@@ -1,5 +1,8 @@
 package JavaCool303;
 
+import java.awt.Color;
+import java.awt.Component;
+
 public abstract class Cool303Theme {
 
 	public int[] RGB1;
@@ -15,8 +18,8 @@ public abstract class Cool303Theme {
 		RGB3 = new int[]{0,0,0};
 	}
 	
-	public void applyTheme(){
-		
+	public void applyTheme(Cool303Box box){
+		box.repaint();
 	}
 	
 }

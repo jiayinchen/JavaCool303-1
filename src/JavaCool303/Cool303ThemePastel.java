@@ -1,5 +1,7 @@
 package JavaCool303;
 
+import java.awt.Color;
+
 public class Cool303ThemePastel extends Cool303Theme {
 	
 	// color palette for Cool303ThemePastel
@@ -11,7 +13,8 @@ public class Cool303ThemePastel extends Cool303Theme {
 	 * Constructs new Cool303ThemePastel
 	 */
 	public Cool303ThemePastel(){
-	
+		super();
+		
 	}
 	
 }

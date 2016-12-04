@@ -1,5 +1,8 @@
 package JavaCool303;
 
+import java.awt.Graphics;
+import java.awt.LayoutManager;
+
 public class Cool303Box extends Cool303Container{
 
 	/**
@@ -9,12 +12,8 @@ public class Cool303Box extends Cool303Container{
 		super();
 	}
 	
-	/**
-	 * Set a Cool303Theme to Cool303Box and its Cool303Componenets
-	 * @param theme Cool303Theme
-	 */
-	public void setTheme(Cool303Theme theme){
-		theme.applyTheme();
+	public Cool303Box(LayoutManager layout){
+		super(layout);
 	}
 	
 }
