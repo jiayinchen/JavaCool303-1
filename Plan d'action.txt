@@ -1,0 +1,15 @@
+JPanel panel = new JPanel();
+panel.setLayout(new GridLayout(4,3));
+
+same as
+
+JFrame f = new JFrame();
+f.setTheme(new Cool303ThemePastel());
+
+interface ThemeManager aggregates Container (JFrame)
+Cool303ThemePastel implements ThemeManager
+
+Cool303ThemePastel
+- get everything in the container (input: container c)
+	--> Components[] comps = c.getComponents();
+	--> loop through comps .getClass();
